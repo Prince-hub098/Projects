@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Q/A GAME</title>
+ <style>
+ .box{
+	 width: 900px;
+	 height: 650px;
+	 padding: 20px;
+	 border: 2px solid #333;
+	 margin: 30px;
+	 background-color: grey;
+	}
+</style>
+</head>
+ <body>
+  <div class="box">
+   	<h1>Welcome To The Game</h1>
+   	<p id="para">Would you like to play the game?</p>
+   
+    <button onclick="positive()">Yes	
+    </button>
+    <button onclick="negative()">No</button>
+    <script>
+    	function positive(){
+    		var ele=document.getElementById("para");
+    		 ele.innerText="*GReat* Let's Start the Game!!!";
+    		 ele.style.backgroundColor="rgb(104, 97, 70)";
+    		 ele.style.fontSize="30px";
+	    
+    		var userData = {};
+       userData.name = prompt("What is your name?");
+      console.log("Hello, " + userData.name + "!");
+    		var age = prompt("Hi " + name + "! How old are you?");
+    		console.log("You are " + age + " years old.");
+
+    	
+    	}
+    	function negative(){
+    		var ele1=document.getElementById("para");
+    		 ele1.innerText="No Problem. U can play later on";
+    		 ele1.style.fontSize="30px";
+    	}
+
+    </script>
+   <p style="color:black; font-size: '40'px;">Q.1 Which language do you prefer for coding?<br>
+      <label><input id="C-Programming" type="radio" name="C" value="C-Programming">C-Programming
+      <label><input id="C++" type="radio" name="C++" value="C++"> C++
+      <label><input id="JAVA" type="radio" name="J" value="JAVA"> JAVA
+      <label><input id="JS" type="radio" name="Js" value="JS"> JS
+      <label><input id="Python" type="radio" name="P" value="Python"> Python</label><br><br>
+     
+     Q.2 Which Subject do you find hardest?<br>
+     <label><input id="" type="radio" name="M" value="Mathematics">Mathematics
+      <label><input id="Programming" type="radio" name="P" value="Programming"> Programming
+      <label><input id="Electronics" type="radio" name="E" value="Electronics"> Electronics
+      <label><input id="Electical" type="radio" name="EE" value="Electical"> Electical
+      </label><br><br>
+
+     Q.3 What is the one habbit you want to change in yourself?<br>
+     <form onsubmit="positive()">
+    <input type="text" name=" your response" placeholder=" Your response"><br><br>
+
+    Q.4 What do you prefer a Corporate job or a Start-up?<br>
+    
+    <input type="text" name=" your response" placeholder=" Your response."><br><br>
+ 
+
+    Q.5 Suppose you get a job in IT-compay.Which type will u prefer:
+    <br>Work_from_home/going_to_office.
+    
+    <input type="text" name=" your response" placeholder=" Your response."></p><br><br>
+    
+	  <button type="submit">Submit</button>
+  </form>
+ </div>
+</body>
+</html>
