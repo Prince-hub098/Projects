@@ -1,0 +1,21 @@
+<html lang="en-US">
+<head>
+ <title>Java Script</title>
+ <script>
+ 	function showInConsole(){
+ 		//let uName=document.getElementById("username");
+ 		//let cVal=uName.value;
+ 		document.write(document.getElementById("username").value);
+ 		return false;
+ 	}
+ </script>
+</head>
+<body>
+ <form onsubmit="showInConsole()">
+ 	<label for="username">User Name:</label>
+ 	<input id="username" type="text" name="username"></input>
+ 	<input type="Submit"></input>
+ </form>
+ 
+</body>
+</html>
